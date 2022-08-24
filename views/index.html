@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icon.ico" type="'image/ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Agenda das Trancistas</title>
+</head>
+
+<body>
+    
+    <div class="container">     
+        <header>
+            <div class="btn-group">
+                
+                <button class="btn" id="image-button1" onclick="agendar()">
+                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                    </svg>
+                    <span>AGENDAR</span>
+                </button>
+                <a style="margin-left: 10px;" href = 'http://localhost:8081/dia'>
+                <button class="btn" id="image-button2" onclick="verDia()">
+                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                    </svg>
+                    <span>AGENDA DIA</span>
+                </button>
+                </a>
+                <a style="margin-left: 10px;" href = 'http://localhost:8081/semana'>
+                <button class="btn" id="image-button3" onclick="verSemana()">
+                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                    </svg>
+                    <span>AGENDA SEMANA</span>
+                </button>
+                </a>
+            </div>
+            <div class="btn-group">
+                <a style="margin:0 10px 0 0;" href = 'http://localhost:8081/mes'>
+                <button class="btn" id="image-button4" onclick="verMes()">
+                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                    </svg>
+                    <span>AGENDA MÊS</span>
+                </button>
+                </a>
+                <button class="btn" id="image-button5" onclick="periodo()">
+                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                    </svg>
+                    <span>ESCOLHER PERIODO</span>
+                </button>
+                <button class="btn" id="image-button6" onclick="alteraDados()">
+                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                    </svg>
+                    <span>ALTERAR AGENDA</span>
+                </button>
+            </div>
+        </header>
+      <div id="form"></div>
+      <div id="dia"></div>
+      <div id="semana"></div>
+      <div id="mes"></div>
+      <div id="periodo"></div>
+    </div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
