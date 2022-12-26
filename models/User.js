@@ -8,6 +8,6 @@ const User = db.define('tb_usuarios', {id: {type: Sequelize.INTEGER, primaryKey:
     senha: {type: Sequelize.STRING, allowNull: false}});
 
 // Criar tabela
-// User.sync();
+User.sync();
 
 module.exports = User;

@@ -15,6 +15,6 @@ const Agendamento = db.define('tb_agendamentos',
     HR_AGENDADA: {type: Sequelize.TIME, allowNull: true}});
 
 // Criar tabela
-// Agendamento.sync();
+Agendamento.sync();
 
 module.exports = Agendamento;
